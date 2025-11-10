@@ -6,7 +6,7 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #DDEBF7;
+            background-color: #DDEBF7; /* основной фон сайта */
             margin: 0;
             padding: 20px;
         }
@@ -41,7 +41,7 @@
         section {
             max-width: 800px;
             margin: 0 auto 30px auto;
-            background-color: #DDEBF7;
+            background-color: #EAF3FB; /* фон блоков светлее на 3 тона */
             padding: 15px;
             border-radius: 8px;
             border: 2px solid #2E5283; 
@@ -82,12 +82,13 @@
         }
 
         #popup-content {
-            background-color: #fff;
+            background-color: #EAF3FB; /* фон попапа тоже светлее */
             padding: 30px;
             border-radius: 10px;
             text-align: center;
             max-width: 400px;
             box-shadow: 0 0 10px #000;
+            border: 2px solid #2E5283;
         }
 
         #popup-content p {
@@ -229,7 +230,7 @@
 
         declineBtn.addEventListener('click', () => {
             alert("Сайт закроется.");
-            window.close(); // закрывает вкладку (работает не во всех браузерах)
+            window.close();
         });
     </script>
 
