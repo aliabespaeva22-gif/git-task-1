@@ -1,0 +1,7 @@
+<<<<<<< HEAD
+Hello everyone!
+Welcome!
+=======
+Hello students!
+This is TITLE version.
+>>>>>>> feature/title
