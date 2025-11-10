@@ -11,44 +11,227 @@
             padding: 20px;
         }
 
-        h1 {
-            color: #3B6AA0;
-            font-weight: bold;
-            text-align: left;
-            margin-bottom: 20px;
-        }
-
-        .image-container {
+        header {
             text-align: center;
             margin-bottom: 20px;
         }
 
-        .image-container img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 8px;
+        h1 {
+            color: #3B6AA0;
+            font-weight: bold;
+            margin-bottom: 10px;
         }
 
-        p {
+        nav {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        nav a {
+            text-decoration: none;
             color: #3B6AA0;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        section {
+            max-width: 800px;
+            margin: 0 auto 30px auto;
             background-color: #DDEBF7;
             padding: 15px;
             border-radius: 8px;
+            border: 2px solid #2E5283; 
+        }
+
+        section h2 {
+            color: #3B6AA0;
+            margin-top: 0;
+        }
+
+        section p, section ul {
+            color: #3B6AA0;
             line-height: 1.6;
-            max-width: 800px;
-            border: 2px solid #2E5283; /* цвет обводки на 7 тонов темнее текста */
+        }
+
+        section ul {
+            padding-left: 20px;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            color: #3B6AA0;
+        }
+
+        /* Стили попапа */
+        #welcome-popup {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.5);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+        }
+
+        #popup-content {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            text-align: center;
+            max-width: 400px;
+            box-shadow: 0 0 10px #000;
+        }
+
+        #popup-content p {
+            margin-bottom: 20px;
+            color: #3B6AA0;
+            font-weight: bold;
+        }
+
+        #popup-content button {
+            padding: 10px 20px;
+            margin: 0 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        #accept-btn {
+            background-color: #3B6AA0;
+            color: #fff;
+        }
+
+        #decline-btn {
+            background-color: #ccc;
+            color: #333;
+        }
+
+        #accept-btn:hover {
+            background-color: #2E5283;
+        }
+
+        #decline-btn:hover {
+            background-color: #999;
         }
     </style>
 </head>
 <body>
-    <h1>Балалар үйі Шанырақ</h1>
 
-    <div class="image-container">
-    <img src="https://raw.githubusercontent.com/aliabespaeva22-gif/git-task-1/main/images/celebrating-human-rights-day.jpg" alt="Celebrating Human Rights Day">
-</div>
+    <!-- Попап приветствия -->
+    <div id="welcome-popup">
+        <div id="popup-content">
+            <p>Добро пожаловать на сайт Балалар үйі Шанырақ! Біз dodi файлдарын қолданамыз.</p>
+            <button id="accept-btn">Принять</button>
+            <button id="decline-btn">Отказаться</button>
+        </div>
+    </div>
 
-    <p>
-        Біздің балалар үйі – мейірім мен жылулыққа толы шаңырақ. Мұнда әр бала өз орнын тауып, қамқорлық пен сүйіспеншілікке бөленеді. Біз балалардың болашағына сенеміз және олардың арманын жүзеге асыру үшін бар күшімізді саламыз. Негізгі мақсатымыз – әр баланың бақытты өмір сүруіне, өз қабілетін дамытуына және қоғамда өз орнын табуына жағдай жасау.
-    </p>
+    <header>
+        <h1>Балалар үйі Шанырақ</h1>
+    </header>
+
+    <nav>
+        <a href="#home">Басты бет</a>
+        <a href="#about">Біз туралы</a>
+        <a href="#news">Жаңалықтар</a>
+        <a href="#help">Қалай көмектесуге болады</a>
+        <a href="#contacts">Байланыс</a>
+    </nav>
+
+    <!-- Главная -->
+    <section id="home">
+        <h2>Басты бет</h2>
+        <p>
+            Балалар үйі Шанырақ – әр баланың қуанышты балалығын қамтамасыз ететін мейірімге толы орын. Біз балаларға қауіпсіз орта, білім алу мүмкіндігі және сүйіспеншілікті қамтамасыз етеміз.
+        </p>
+    </section>
+
+    <!-- О нас -->
+    <section id="about">
+        <h2>Біз туралы</h2>
+        <p>
+            Балалар үйі Шанырақ 2005 жылы құрылған. Біздің негізгі мақсатымыз – әр балаға мейірім мен қамқорлық көрсету, олардың жеке қабілеттерін дамытуға мүмкіндік жасау.
+        </p>
+        <p>
+            Біздің ұжым: тәжірибелі педагогтар мен тәрбиешілер, психологтар мен медициналық қызметкерлер.
+        </p>
+        <p>
+            Мекенжай: Московская 12<br>
+            Телефон: 8 705 555 5585<br>
+            Электрондық пошта: shanyraq@mail.kz
+        </p>
+    </section>
+
+    <!-- Новости -->
+    <section id="news">
+        <h2>Жаңалықтар мен іс-шаралар</h2>
+        <ul>
+            <li>1 қыркүйек – Білім күні. Балалар үйінде мерекелік іс-шара өтті.</li>
+            <li>20 қазан – Достар күні. Волонтерлер балаларға ойыншықтар мен кітаптар сыйлады.</li>
+            <li>10 желтоқсан – Адам құқықтары күні. Балалар үйінде тақырыптық сабақтар өткізілді.</li>
+        </ul>
+    </section>
+
+    <!-- Как помочь -->
+    <section id="help">
+        <h2>Қалай көмектесуге болады</h2>
+        <p>Сіз бізге әртүрлі жолдармен көмектесе аласыз:</p>
+        <ul>
+            <li>Қаржылай қолдау көрсету (банк реквизиттері: KZ123456789012345678)</li>
+            <li>Киім, ойыншық, оқу құралдары беру</li>
+            <li>Волонтер ретінде қатысу</li>
+        </ul>
+        <p>
+            Қосымша ақпарат алу үшін бізбен байланысыңыз:<br>
+            Телефон: 8 705 555 5585<br>
+            Электрондық пошта: shanyraq@mail.kz
+        </p>
+    </section>
+
+    <!-- Контакты -->
+    <section id="contacts">
+        <h2>Байланыс</h2>
+        <p>
+            Мекенжай: Московская 12, Қазақстан<br>
+            Телефон: 8 705 555 5585<br>
+            Электрондық пошта: shanyraq@mail.kz
+        </p>
+        <p>Карта: [Google Maps қосуға болады]</p>
+        <p>Сіз бізге хабарласу үшін төмендегі форманы пайдалана аласыз:</p>
+        <ul>
+            <li>Аты-жөні</li>
+            <li>Email</li>
+            <li>Хабарлама</li>
+        </ul>
+    </section>
+
+    <footer>
+        © 2025 Балалар үйі Шанырақ
+    </footer>
+
+    <script>
+        const popup = document.getElementById('welcome-popup');
+        const acceptBtn = document.getElementById('accept-btn');
+        const declineBtn = document.getElementById('decline-btn');
+
+        acceptBtn.addEventListener('click', () => {
+            popup.style.display = 'none';
+        });
+
+        declineBtn.addEventListener('click', () => {
+            alert("Сайт закроется.");
+            window.close(); // закрывает вкладку (работает не во всех браузерах)
+        });
+    </script>
+
 </body>
 </html>
